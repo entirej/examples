@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entirejFramework>
+    <renderer>
+        <formRenderers>
+            <renderer name="Form" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.form.definition.EJFXFormRendererDefinition"/>
+        </formRenderers>
+        <blockRenderers>
+            <renderer name="MultiRecord" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.block.definition.EJFXMultiRecordBlockDefinition"/>
+            <renderer name="SingleRecord" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.block.definition.EJFXSingleRecordBlockDefinition"/>
+        </blockRenderers>
+        <itemRenderers>
+            <renderer name="TextItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXTextItemRendererDefinition">
+            </renderer>
+            <renderer name="ButtonItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXButtonItemRendererDefinition">
+            </renderer>
+            <renderer name="LabelItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXLabelItemRendererDefinition">
+            </renderer>
+            <renderer name="NumberItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXNumberItemRendererDefinition">
+            </renderer>
+            <renderer name="DateItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXDateItemRendererDefinition">
+            </renderer>
+            <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXCheckBoxRendererDefinition">
+            </renderer>
+            <renderer name="ComboItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXComboBoxRendererDefinition">
+            </renderer>
+            <renderer name="TextAreaItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXTextAreaRendererDefinition">
+            </renderer>
+            <renderer name="ImageItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXImageItemRendererDefinition">
+            </renderer>
+            <renderer name="RadioItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXRadioGroupItemRendererDefinition">
+            </renderer>
+        </itemRenderers>
+        <lovRenderers>
+            <renderer name="Empty" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXComboBoxLovRendererDefinition"/>
+            <renderer name="Standard" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXStandardLovRendererDefinition"/>
+            <renderer name="Lookup" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXLookupFormLovRendererDefinition"/>
+        </lovRenderers>
+        <menuRenderers>
+        </menuRenderers>
+        <appCompRenderers>
+            <renderer name="SingleFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXSingleFormRendererDefinition"/>
+            <renderer name="Banner" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXBannerRendererDefinition"/>
+            <renderer name="TabFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXTabFormContainerRendererDefinition"/>
+            <renderer name="StackedFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXStackedFormContainerRendererDefinition"/>
+            <renderer name="FormToolBar" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXFormToolBarRendererDefinition"/>
+            <renderer name="Menu" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXMenuTreeRendererDefinition"/>
+        </appCompRenderers>
+    </renderer>
+</entirejFramework>

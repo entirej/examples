@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entirejFramework>
+    <applicationManager><![CDATA[org.entirej.applicationframework.fx.application.EJFXApplicationManager]]></applicationManager>
+    <applicationManagerDefinition><![CDATA[org.entirej.applicationframework.fx.renderers.application.EJFXApplicationDefinition]]></applicationManagerDefinition>
+    <connectionFactoryClassName><![CDATA[org.entirej.db.connection.EmbeddedConnectionFactory]]></connectionFactoryClassName>
+    <reusableBlocksLocation><![CDATA[org/miap/forms/reusableblocks]]></reusableBlocksLocation>
+    <reusableLovDefinitionLocation><![CDATA[org/miap/forms/reusablelovdefs]]></reusableLovDefinitionLocation>
+    <translatorClassName></translatorClassName>
+    <applicationLevelParameterList>
+    </applicationLevelParameterList>
+    <applicationDefinedProperties>
+    </applicationDefinedProperties>
+    <packages>
+        <formsPackage name="org/miap/forms"/>
+    </packages>
+    <renderer>
+        <formRenderers>
+            <renderer name="Form" rendererClassName="org.entirej.applicationframework.fx.renderers.form.EJFXFormRenderer"/>
+        </formRenderers>
+        <blockRenderers>
+            <renderer name="MultiRecord" rendererClassName="org.entirej.applicationframework.fx.renderers.blocks.EJFXMultiRecordBlockRenderer"/>
+            <renderer name="SingleRecord" rendererClassName="org.entirej.applicationframework.fx.renderers.blocks.EJFXSingleRecordBlockRenderer"/>
+        </blockRenderers>
+        <itemRenderers>
+            <renderer name="TextItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXTextItemRenderer">
+            </renderer>
+            <renderer name="ButtonItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXButtonItemRenderer">
+            </renderer>
+            <renderer name="LabelItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXLabelItemRenderer">
+            </renderer>
+            <renderer name="NumberItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXNumberItemRenderer">
+            </renderer>
+            <renderer name="DateItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXDateItemRenderer">
+            </renderer>
+            <renderer name="CheckBoxItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXCheckBoxItemRenderer">
+            </renderer>
+            <renderer name="ComboItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXComboItemRenderer">
+            </renderer>
+            <renderer name="TextAreaItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXTextAreaRenderer">
+            </renderer>
+            <renderer name="ImageItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXImageItemRenderer">
+            </renderer>
+            <renderer name="RadioItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXRadioGroupItemRenderer">
+            </renderer>
+        </itemRenderers>
+        <lovRenderers>
+            <renderer name="Empty" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXComboBoxLovRenderer"/>
+            <renderer name="Standard" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXStandardLovRenderer"/>
+            <renderer name="Lookup" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXLookupFormLovRenderer"/>
+        </lovRenderers>
+        <menuRenderers>
+        </menuRenderers>
+        <appCompRenderers>
+            <renderer name="SingleFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXSingleFormContainer"/>
+            <renderer name="Banner" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXBanner"/>
+            <renderer name="TabFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXTabPaneFormContainer"/>
+            <renderer name="StackedFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXStackedPaneFormContainer"/>
+            <renderer name="FormToolBar" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXDefaultFormToolbar"/>
+            <renderer name="Menu" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXMenuTreeComponent"/>
+        </appCompRenderers>
+    </renderer>
+    <applicationMenus>
+        <applicationMenu name="Default" actionProcessorClassName="org.miap.menu.MenuActionProcessor" default="true">
+            <leaf type="FORM" name="CUSTOMERS">
+                <displayName><![CDATA[Customers]]></displayName>
+                <formName><![CDATA[MIAP001]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/customers.png]]></icon>
+            </leaf>
+            <leaf type="BRANCH" name="MASTER_DATA">
+                <displayName><![CDATA[Master Data]]></displayName>
+                <icon></icon>
+                <leaf type="FORM" name="COMPANY">
+                    <displayName><![CDATA[Company]]></displayName>
+                    <formName><![CDATA[MIAP004]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/company.png]]></icon>
+                </leaf>
+                <leaf type="SPACER" name="">
+                </leaf>
+                <leaf type="FORM" name="SALUTATIONS">
+                    <displayName><![CDATA[Salutations]]></displayName>
+                    <formName><![CDATA[MIAP006]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/salutations.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="PAYMENT_TERMS">
+                    <displayName><![CDATA[Payment Terms]]></displayName>
+                    <formName><![CDATA[MIAP005]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/payment_terms.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="VAT_RATES">
+                    <displayName><![CDATA[Vat Rates]]></displayName>
+                    <formName><![CDATA[MIAP007]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/vat_rates.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="CONTACT_TYPES">
+                    <displayName><![CDATA[Contact Types]]></displayName>
+                    <formName><![CDATA[MIAP008]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/contact_types.png]]></icon>
+                </leaf>
+            </leaf>
+        </applicationMenu>
+    </applicationMenus>
+    <applicationLayout>
+        <title><![CDATA[MIAP - Invoicing Application]]></title>
+        <col>1</col>
+        <height>600</height>
+        <width>900</width>
+        <items>
+            <item type="SPLIT">
+                <name></name>
+                <fill><![CDATA[BOTH]]></fill>
+                <grab><![CDATA[BOTH]]></grab>
+                <hHint>0</hHint>
+                <wHint>0</wHint>
+                <hMin>0</hMin>
+                <wMin>0</wMin>
+                <hSpan>1</hSpan>
+                <VSpan>1</VSpan>
+                <orientation><![CDATA[HORIZONTAL]]></orientation>
+                <items>
+                    <item type="COMPONENT">
+                        <name></name>
+                        <fill><![CDATA[BOTH]]></fill>
+                        <grab><![CDATA[BOTH]]></grab>
+                        <hHint>0</hHint>
+                        <wHint>80</wHint>
+                        <hMin>0</hMin>
+                        <wMin>0</wMin>
+                        <hSpan>1</hSpan>
+                        <VSpan>1</VSpan>
+                        <renderer><![CDATA[SingleFormContainer]]></renderer>
+                        <rendererProperties>
+                            <property name="FORM_ID" multilingual="false" propertyType="FORM_ID"><![CDATA[MIAP002]]></property>
+                        </rendererProperties>
+                    </item>
+                    <item type="COMPONENT">
+                        <name></name>
+                        <fill><![CDATA[BOTH]]></fill>
+                        <grab><![CDATA[VERTICAL]]></grab>
+                        <hHint>0</hHint>
+                        <wHint>20</wHint>
+                        <hMin>0</hMin>
+                        <wMin>0</wMin>
+                        <hSpan>1</hSpan>
+                        <VSpan>1</VSpan>
+                        <renderer><![CDATA[Menu]]></renderer>
+                        <rendererProperties>
+                            <property name="MENU_GROUP" multilingual="false" propertyType="MENU_GROUP"><![CDATA[Default]]></property>
+                        </rendererProperties>
+                    </item>
+                </items>
+            </item>
+        </items>
+    </applicationLayout>
+    <visualAttributes>
+        <visualAttribute name="VA_SINGLE_FORM_CONTAINER_TOOLBAR">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <style><![CDATA[Plain]]></style>
+            <weight><![CDATA[Normal]]></weight>
+            <foregroundColor><![CDATA[r102g153b204]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="VA_FORM_STANDARD_TOOLBAR">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <style><![CDATA[Plain]]></style>
+            <weight><![CDATA[Normal]]></weight>
+            <foregroundColor></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+    </visualAttributes>
+</entirejFramework>

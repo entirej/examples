@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entirejFramework>
+    <applicationManager><![CDATA[org.entirej.applicationframework.rwt.application.EJRWTApplicationManager]]></applicationManager>
+    <applicationManagerDefinition><![CDATA[org.entirej.applicationframework.rwt.renderers.application.EJRwtApplicationDefinition]]></applicationManagerDefinition>
+    <connectionFactoryClassName><![CDATA[org.entirej.db.connection.EmbeddedConnectionFactory]]></connectionFactoryClassName>
+    <reusableBlocksLocation><![CDATA[org/miap/forms/reusableblocks]]></reusableBlocksLocation>
+    <reusableLovDefinitionLocation><![CDATA[org/miap/forms/reusablelovdefs]]></reusableLovDefinitionLocation>
+    <translatorClassName></translatorClassName>
+    <applicationLevelParameterList>
+    </applicationLevelParameterList>
+    <applicationDefinedProperties>
+        <property name="DISPLAY_TAB_BORDER" multilingual="false" propertyType="BOOLEAN"></property>
+        <propertyGroup name="APP_MESSAGING">
+            <propertyGroup name="APP_MSG_WARNING">
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_HINT">
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_INFO">
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[NOTIFICATION]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+            </propertyGroup>
+            <propertyGroup name="APP_MSG_ERROR">
+                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
+                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
+                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup name="ACTION_GROUP">
+            <property name="KEY_QUERY" multilingual="false" propertyType="STRING"></property>
+            <property name="KEY_DELETE" multilingual="false" propertyType="STRING"></property>
+            <property name="KEY_UPDATE" multilingual="false" propertyType="STRING"></property>
+            <property name="KEY_LOV" multilingual="false" propertyType="STRING"><![CDATA[SHIFT+ARROW_DOWN]]></property>
+            <property name="KEY_REFRESH" multilingual="false" propertyType="STRING"></property>
+            <property name="KEY_INSERT" multilingual="false" propertyType="STRING"></property>
+        </propertyGroup>
+    </applicationDefinedProperties>
+    <packages>
+        <formsPackage name="org/miap/forms"/>
+    </packages>
+    <renderer>
+        <formRenderers>
+            <renderer name="Form" rendererClassName="org.entirej.applicationframework.rwt.renderers.form.EJRwtFormRenderer"/>
+        </formRenderers>
+        <blockRenderers>
+            <renderer name="SingleRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRwtSingleRecordBlockRenderer"/>
+            <renderer name="MultiRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRwtMultiRecordBlockRenderer"/>
+            <renderer name="TreeRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRwtTreeRecordBlockRenderer"/>
+            <renderer name="TreeTableRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.blocks.EJRwtTreeTableRecordBlockRenderer"/>
+            <renderer name="MobileListRecord" rendererClassName="org.entirej.applicationframework.rwt.renderers.mobile.blocks.EJRwtListRecordBlockRenderer"/>
+        </blockRenderers>
+        <itemRenderers>
+            <renderer name="TextItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtTextItemRenderer">
+            </renderer>
+            <renderer name="TextArea" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtTextAreaRenderer">
+            </renderer>
+            <renderer name="NumberItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtNumberItemRenderer">
+            </renderer>
+            <renderer name="DateItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtDateItemRenderer">
+            </renderer>
+            <renderer name="DateTimeItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtDateTimeItemRenderer">
+            </renderer>
+            <renderer name="LabelItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtLabelItemRenderer">
+            </renderer>
+            <renderer name="ButtonItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtButtonItemRenderer">
+            </renderer>
+            <renderer name="ComboItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtComboItemRenderer">
+            </renderer>
+            <renderer name="RadioGroupItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtRadioGroupItemRenderer">
+            </renderer>
+            <renderer name="CheckBoxItem" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtCheckBoxItemRenderer">
+            </renderer>
+            <renderer name="ImageItemRenderer" rendererClassName="org.entirej.applicationframework.rwt.renderers.item.EJRwtImageItemRenderer">
+            </renderer>
+        </itemRenderers>
+        <lovRenderers>
+            <renderer name="StandardLovRenderer" rendererClassName="org.entirej.applicationframework.rwt.renderers.lov.EJRwtStandardLovRenderer"/>
+            <renderer name="LookupLovRenderer" rendererClassName="org.entirej.applicationframework.rwt.renderers.lov.EJRwtLookupFormLovRenderer"/>
+        </lovRenderers>
+        <menuRenderers>
+        </menuRenderers>
+        <appCompRenderers>
+            <renderer name="TabFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTTabPaneFormContainer"/>
+            <renderer name="MenuTree" rendererClassName="org.entirej.applicationframework.rwt.application.components.menu.EJRwtMenuTreeComponent"/>
+            <renderer name="FormToolBar" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJDefaultRwtFormContainerToolbar"/>
+            <renderer name="Banner" rendererClassName="org.entirej.applicationframework.rwt.application.components.EJRWTBanner"/>
+            <renderer name="SingleFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTSingleFormContainer"/>
+            <renderer name="StackedFormContainer" rendererClassName="org.entirej.applicationframework.rwt.application.form.containers.EJRWTStackedPaneFormContainer"/>
+            <renderer name="Statusbar" rendererClassName="org.entirej.applicationframework.rwt.application.components.EJRWTStatusbar"/>
+        </appCompRenderers>
+    </renderer>
+    <applicationMenus>
+        <applicationMenu name="Default" actionProcessorClassName="" default="true">
+            <leaf type="FORM" name="CUSTOMERS">
+                <displayName><![CDATA[Customers]]></displayName>
+                <formName><![CDATA[MIAP001]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/customers.png]]></icon>
+            </leaf>
+            <leaf type="BRANCH" name="MASTER_DATA">
+                <displayName><![CDATA[Master Data]]></displayName>
+                <icon></icon>
+                <leaf type="FORM" name="COMPANY">
+                    <displayName><![CDATA[Company]]></displayName>
+                    <formName><![CDATA[MIAP004]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/company.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="SALUTATIONS">
+                    <displayName><![CDATA[Salutations]]></displayName>
+                    <formName><![CDATA[MIAP006]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/salutations.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="PAYMENT_TERMS">
+                    <displayName><![CDATA[Payment Terms]]></displayName>
+                    <formName><![CDATA[MIAP005]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/payment_terms.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="VAT_RATES">
+                    <displayName><![CDATA[Vat Rates]]></displayName>
+                    <formName><![CDATA[MIAP007]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/vat_rates.png]]></icon>
+                </leaf>
+                <leaf type="FORM" name="CONTACT_TYPES">
+                    <displayName><![CDATA[Contact Types]]></displayName>
+                    <formName><![CDATA[MIAP008]]></formName>
+                    <hint></hint>
+                    <icon><![CDATA[/org/miap/menu/images/16/contact_types.png]]></icon>
+                </leaf>
+            </leaf>
+        </applicationMenu>
+        <applicationMenu name="EJ.MOBILE" actionProcessorClassName="">
+            <leaf type="FORM" name="INVOICES.M">
+                <displayName><![CDATA[Invoices]]></displayName>
+                <formName><![CDATA[MIAP002M]]></formName>
+                <hint></hint>
+                <icon></icon>
+            </leaf>
+            <leaf type="FORM" name="CUSTOMERS.M">
+                <displayName><![CDATA[Cutomers]]></displayName>
+                <formName><![CDATA[MIAP001M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/customers.png]]></icon>
+            </leaf>
+            <leaf type="FORM" name="COMPANY.M">
+                <displayName><![CDATA[Company]]></displayName>
+                <formName><![CDATA[MIAP004M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/company.png]]></icon>
+            </leaf>
+            <leaf type="FORM" name="SALUTATIONS.M">
+                <displayName><![CDATA[Salutations]]></displayName>
+                <formName><![CDATA[MIAP006M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/salutations.png]]></icon>
+            </leaf>
+            <leaf type="FORM" name="PAYMENT_TERMS.M">
+                <displayName><![CDATA[Payment Terms]]></displayName>
+                <formName><![CDATA[MIAP005M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/payment_terms.png]]></icon>
+            </leaf>
+            <leaf type="FORM" name="VAT_RATES.M">
+                <displayName><![CDATA[Vat Rates]]></displayName>
+                <formName><![CDATA[MIAP007M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/vat_rates.png]]></icon>
+            </leaf>
+            <leaf type="FORM" name="CONTACT_TYPES.M">
+                <displayName><![CDATA[Contact Types]]></displayName>
+                <formName><![CDATA[MIAP008M]]></formName>
+                <hint></hint>
+                <icon><![CDATA[/org/miap/menu/images/16/contact_types.png]]></icon>
+            </leaf>
+        </applicationMenu>
+    </applicationMenus>
+    <applicationLayout>
+        <title><![CDATA[Mojave Invoicing Application (MIAP)]]></title>
+        <col>1</col>
+        <height>600</height>
+        <width>0</width>
+        <items>
+            <item type="SPLIT">
+                <name><![CDATA[Tab Forms]]></name>
+                <fill><![CDATA[BOTH]]></fill>
+                <grab><![CDATA[BOTH]]></grab>
+                <hHint>0</hHint>
+                <wHint>0</wHint>
+                <hMin>0</hMin>
+                <wMin>0</wMin>
+                <hSpan>1</hSpan>
+                <VSpan>1</VSpan>
+                <orientation><![CDATA[HORIZONTAL]]></orientation>
+                <items>
+                    <item type="COMPONENT">
+                        <name></name>
+                        <fill><![CDATA[BOTH]]></fill>
+                        <grab><![CDATA[BOTH]]></grab>
+                        <hHint>0</hHint>
+                        <wHint>80</wHint>
+                        <hMin>0</hMin>
+                        <wMin>0</wMin>
+                        <hSpan>1</hSpan>
+                        <VSpan>1</VSpan>
+                        <renderer><![CDATA[SingleFormContainer]]></renderer>
+                        <rendererProperties>
+                            <property name="FORM_ID" multilingual="false" propertyType="FORM_ID"><![CDATA[MIAP002]]></property>
+                        </rendererProperties>
+                    </item>
+                    <item type="COMPONENT">
+                        <name></name>
+                        <fill><![CDATA[BOTH]]></fill>
+                        <grab><![CDATA[BOTH]]></grab>
+                        <hHint>0</hHint>
+                        <wHint>20</wHint>
+                        <hMin>0</hMin>
+                        <wMin>0</wMin>
+                        <hSpan>1</hSpan>
+                        <VSpan>1</VSpan>
+                        <renderer><![CDATA[MenuTree]]></renderer>
+                        <rendererProperties>
+                            <property name="MENU_GROUP" multilingual="false" propertyType="MENU_GROUP"><![CDATA[Default]]></property>
+                        </rendererProperties>
+                    </item>
+                </items>
+            </item>
+        </items>
+    </applicationLayout>
+    <visualAttributes>
+        <visualAttribute name="VA_MOBILELIST_HEIGHLIGHT">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>14</fontSize>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r0g0b128]]></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+    </visualAttributes>
+</entirejFramework>

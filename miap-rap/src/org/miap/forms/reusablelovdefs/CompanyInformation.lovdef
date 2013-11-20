@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entirejFramework>
+    <form>
+        <formTitle></formTitle>
+        <formDisplayName></formDisplayName>
+        <formWidth>820</formWidth>
+        <formHeight>520</formHeight>
+        <numCols>1</numCols>
+        <actionProcessorClassName></actionProcessorClassName>
+        <formRendererName></formRendererName>
+        <formParameterList>
+        </formParameterList>
+        <applicationProperties>
+        </applicationProperties>
+        <formRendererProperties>
+        </formRendererProperties>
+        <canvasList>
+        </canvasList>
+        <blockList>
+        </blockList>
+        <relationList>
+        </relationList>
+        <lovDefinitionList>
+            <lovDefinition name="CompanyInformation" isReferenced="false" rendererName="StandardLovRenderer" allowUserQuery="false" automaticQuery="true">
+                <width>200</width>
+                <height>300</height>
+                <actionProcessorClassName></actionProcessorClassName>
+                <lovRendererProperties>
+                    <property name="ROW_SELECTION" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+                    <property name="SHOW_HORIZONTAL_LINES" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+                    <property name="DISPLAY_FOCUS_BORDER" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
+                    <property name="SHOW_HEADING" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
+                    <property name="HIDE_TABLE_BORDER" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
+                </lovRendererProperties>
+                <block name="CompanyInformation" referenced="false" controlBlock="false">
+                    <isMirrored>false</isMirrored>
+                    <mirrorParent></mirrorParent>
+                    <description></description>
+                    <queryAllowed>true</queryAllowed>
+                    <insertAllowed>true</insertAllowed>
+                    <updateAllowed>true</updateAllowed>
+                    <addControlBlockDefaultRecord>true</addControlBlockDefaultRecord>
+                    <deleteAllowed>true</deleteAllowed>
+                    <canvasName></canvasName>
+                    <blockRendererName></blockRendererName>
+                    <serviceClassName><![CDATA[org.miap.MIAP004.blockservices.CompanyInformationBlockService]]></serviceClassName>
+                    <actionProcessorClassName></actionProcessorClassName>
+                    <queryAllRows>false</queryAllRows>
+                    <maxResults>0</maxResults>
+                    <pageSize>0</pageSize>
+                    <applicationProperties>
+                    </applicationProperties>
+                    <blockRendererProperties>
+                    </blockRendererProperties>
+                    <queryScreenRendererProperties>
+                    </queryScreenRendererProperties>
+                    <insertScreenRendererProperties>
+                    </insertScreenRendererProperties>
+                    <updateScreenRendererProperties>
+                    </updateScreenRendererProperties>
+                    <lovMappingList>
+                    </lovMappingList>
+                    <itemList>
+                        <item name="name">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName><![CDATA[TextItem]]></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                                <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
+                                <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
+                                <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
+                                <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
+                                <property name="CASE" multilingual="false" propertyType="STRING"></property>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankTown">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="iban">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="town">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="addressLine1">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankAddressLine3">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankPostCode">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="addressLine3">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankAddressLine1">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="addressLine2">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="id">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.Integer]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankAddressLine2">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="bankName">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                        <item name="postCode">
+                            <blockServiceItem>true</blockServiceItem>
+                            <mandatoryItem>false</mandatoryItem>
+                            <dataTypeClassName><![CDATA[java.lang.String]]></dataTypeClassName>
+                            <itemRendererName></itemRendererName>
+                            <defaultInsertValue></defaultInsertValue>
+                            <defaultQueryValue></defaultQueryValue>
+                            <itemRendererProperties>
+                            </itemRendererProperties>
+                        </item>
+                    </itemList>
+                    <mainScreenProperties>
+                        <displayFrame>false</displayFrame>
+                        <frameTitle><![CDATA[Company]]></frameTitle>
+                        <numCols>1</numCols>
+                        <height>0</height>
+                        <width>0</width>
+                        <horizontalSpan>1</horizontalSpan>
+                        <verticalSpan>1</verticalSpan>
+                        <expandHorizontally>true</expandHorizontally>
+                        <expandVertically>true</expandVertically>
+                    </mainScreenProperties>
+                    <mainScreen>
+                        <itemGroupList>
+                            <itemGroup name="list">
+                                <displayFrame>false</displayFrame>
+                                <frameTitle></frameTitle>
+                                <numCols>1</numCols>
+                                <height>0</height>
+                                <width>0</width>
+                                <xspan>1</xspan>
+                                <yspan>1</yspan>
+                                <expandHorizontally>true</expandHorizontally>
+                                <expandVertically>true</expandVertically>
+                                <itemGroupItemList>
+                                    <item referencedItemName="name" isSpacerItem="false">
+                                        <label><![CDATA[Name]]></label>
+                                        <hint></hint>
+                                        <editAllowed>false</editAllowed>
+                                        <visible>true</visible>
+                                        <mandatory>false</mandatory>
+                                        <enableLovNotification>false</enableLovNotification>
+                                        <lovMappingName></lovMappingName>
+                                        <validateFromLov>true</validateFromLov>
+                                        <actionCommand></actionCommand>
+                                        <lovRendererRequiredProperties>
+                                            <property name="IS_COLUMN_FIXED" multilingual="false" propertyType="BOOLEAN"></property>
+                                            <property name="COL_ALLIGN" multilingual="false" propertyType="STRING"></property>
+                                            <property name="ALLOW_ROW_SORTING" multilingual="false" propertyType="BOOLEAN"></property>
+                                            <property name="ALLOW_COLUMN_RESIZE" multilingual="false" propertyType="BOOLEAN"></property>
+                                            <property name="ALLOW_COLUMN_REORDER" multilingual="false" propertyType="BOOLEAN"></property>
+                                            <property name="DISPLAY_WIDTH" multilingual="false" propertyType="INTEGER"><![CDATA[30]]></property>
+                                        </lovRendererRequiredProperties>
+                                    </item>
+                                </itemGroupItemList>
+                                <itemGroupList>
+                                </itemGroupList>
+                            </itemGroup>
+                        </itemGroupList>
+                    </mainScreen>
+                    <queryScreen>
+                        <itemGroupList>
+                        </itemGroupList>
+                    </queryScreen>
+                    <insertScreen>
+                        <itemGroupList>
+                        </itemGroupList>
+                    </insertScreen>
+                    <updateScreen>
+                        <itemGroupList>
+                        </itemGroupList>
+                    </updateScreen>
+                </block>
+            </lovDefinition>
+        </lovDefinitionList>
+    </form>
+</entirejFramework>
