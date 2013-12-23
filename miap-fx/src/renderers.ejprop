@@ -31,7 +31,6 @@
             </renderer>
         </itemRenderers>
         <lovRenderers>
-            <renderer name="Empty" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXComboBoxLovRendererDefinition"/>
             <renderer name="Standard" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXStandardLovRendererDefinition"/>
             <renderer name="Lookup" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.lov.definition.EJFXLookupFormLovRendererDefinition"/>
         </lovRenderers>
