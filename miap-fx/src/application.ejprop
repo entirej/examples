@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entirejFramework>
-    <version><![CDATA[2.0]]></version>
     <applicationManager><![CDATA[org.entirej.applicationframework.fx.application.EJFXApplicationManager]]></applicationManager>
     <applicationManagerDefinition><![CDATA[org.entirej.applicationframework.fx.renderers.application.EJFXApplicationDefinition]]></applicationManagerDefinition>
     <connectionFactoryClassName><![CDATA[org.entirej.db.connection.EmbeddedConnectionFactory]]></connectionFactoryClassName>
@@ -10,31 +9,6 @@
     <applicationLevelParameterList>
     </applicationLevelParameterList>
     <applicationDefinedProperties>
-        <propertyGroup name="APP_MESSAGING">
-            <propertyGroup name="APP_MSG_WARNING">
-                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
-                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
-                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
-                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
-            </propertyGroup>
-            <propertyGroup name="APP_MSG_INFO">
-                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[NOTIFICATION]]></property>
-                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
-                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
-                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
-            </propertyGroup>
-            <propertyGroup name="APP_MSG_HINT">
-                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
-                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
-                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
-            </propertyGroup>
-            <propertyGroup name="APP_MSG_ERROR">
-                <property name="APP_MSG_TYPE" multilingual="false" propertyType="STRING"><![CDATA[DIALOG]]></property>
-                <property name="WIDTH" multilingual="false" propertyType="INTEGER"></property>
-                <property name="APP_MSG_NOTIFICATION_AUTOHIDE" multilingual="false" propertyType="BOOLEAN"></property>
-                <property name="HEIGHT" multilingual="false" propertyType="INTEGER"></property>
-            </propertyGroup>
-        </propertyGroup>
     </applicationDefinedProperties>
     <packages>
         <formsPackage name="org/miap/forms"/>
@@ -70,6 +44,7 @@
             </renderer>
         </itemRenderers>
         <lovRenderers>
+            <renderer name="Empty" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXComboBoxLovRenderer"/>
             <renderer name="Standard" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXStandardLovRenderer"/>
             <renderer name="Lookup" rendererClassName="org.entirej.applicationframework.fx.renderers.lov.EJFXLookupFormLovRenderer"/>
         </lovRenderers>
