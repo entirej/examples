@@ -58,6 +58,8 @@
             </renderer>
             <renderer name="DateItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXDateItemRenderer">
             </renderer>
+            <renderer name="DateTimeItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXDateTimeItemRenderer">
+            </renderer>
             <renderer name="CheckBoxItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXCheckBoxItemRenderer">
             </renderer>
             <renderer name="ComboItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXComboItemRenderer">

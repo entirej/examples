@@ -19,6 +19,8 @@
             </renderer>
             <renderer name="DateItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXDateItemRendererDefinition">
             </renderer>
+            <renderer name="DateTimeItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXDateTimeItemRendererDefinition">
+            </renderer>            
             <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXCheckBoxRendererDefinition">
             </renderer>
             <renderer name="ComboItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXComboBoxRendererDefinition">
