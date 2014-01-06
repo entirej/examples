@@ -20,7 +20,7 @@
             <renderer name="DateItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXDateItemRendererDefinition">
             </renderer>
             <renderer name="DateTimeItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXDateTimeItemRendererDefinition">
-            </renderer>            
+            </renderer>
             <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXCheckBoxRendererDefinition">
             </renderer>
             <renderer name="ComboItem" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.item.definition.EJFXComboBoxRendererDefinition">
@@ -41,6 +41,7 @@
         <appCompRenderers>
             <renderer name="SingleFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXSingleFormRendererDefinition"/>
             <renderer name="Banner" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXBannerRendererDefinition"/>
+            <renderer name="StatusBar" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXStatusBarRendererDefinition"/>
             <renderer name="TabFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXTabFormContainerRendererDefinition"/>
             <renderer name="StackedFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXStackedFormContainerRendererDefinition"/>
             <renderer name="FormToolBar" rendererDefinitionClassName="org.entirej.applicationframework.fx.renderers.application.EJFXFormToolBarRendererDefinition"/>
