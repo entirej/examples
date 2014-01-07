@@ -2,53 +2,53 @@
 <entirejFramework>
     <renderer>
         <formRenderers>
-            <renderer name="Form" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.form.definition.EJRwtFormRendererDefinition"/>
+            <renderer name="Form" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.form.definition.EJRWTFormRendererDefinition"/>
         </formRenderers>
         <blockRenderers>
-            <renderer name="SingleRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRwtSingleRecordBlockDefinition"/>
-            <renderer name="MultiRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRwtMultiRecordBlockDefinition"/>
-            <renderer name="TreeRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRwtTreeRecordBlockDefinition"/>
-            <renderer name="TreeTableRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRwtTreeTableRecordBlockDefinition"/>
-            <renderer name="MobileListRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.mobile.block.definition.EJRwtListRecordBlockDefinition"/>
+            <renderer name="SingleRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTSingleRecordBlockDefinition"/>
+            <renderer name="MultiRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTMultiRecordBlockDefinition"/>
+            <renderer name="TreeRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTTreeRecordBlockDefinition"/>
+            <renderer name="TreeTableRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTTreeTableRecordBlockDefinition"/>
+            <renderer name="MobileListRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.mobile.block.definition.EJRWTListRecordBlockDefinition"/>
         </blockRenderers>
         <itemRenderers>
-            <renderer name="TextItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtTextItemRendererDefinition">
+            <renderer name="TextItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTTextItemRendererDefinition">
             </renderer>
-            <renderer name="TextArea" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtTextAreaRendererDefinition">
+            <renderer name="TextArea" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTTextAreaRendererDefinition">
             </renderer>
-            <renderer name="NumberItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtNumberItemRendererDefinition">
+            <renderer name="NumberItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTNumberItemRendererDefinition">
             </renderer>
-            <renderer name="DateItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtDateItemRendererDefinition">
+            <renderer name="DateItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTDateItemRendererDefinition">
             </renderer>
-            <renderer name="DateTimeItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtDateTimeItemRendererDefinition">
+            <renderer name="DateTimeItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTDateTimeItemRendererDefinition">
             </renderer>
-            <renderer name="LabelItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtLabelItemRendererDefinition">
+            <renderer name="LabelItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTLabelItemRendererDefinition">
             </renderer>
-            <renderer name="ButtonItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtButtonItemRendererDefinition">
+            <renderer name="ButtonItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTButtonItemRendererDefinition">
             </renderer>
-            <renderer name="ComboItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtComboBoxRendererDefinition">
+            <renderer name="ComboItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTComboBoxRendererDefinition">
             </renderer>
-            <renderer name="RadioGroupItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtRadioGroupItemRendererDefinition">
+            <renderer name="RadioGroupItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTRadioGroupItemRendererDefinition">
             </renderer>
-            <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtCheckBoxRendererDefinition">
+            <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTCheckBoxRendererDefinition">
             </renderer>
-            <renderer name="ImageItemRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRwtImageItemRendererDefinition">
+            <renderer name="ImageItemRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTImageItemRendererDefinition">
             </renderer>
         </itemRenderers>
         <lovRenderers>
-            <renderer name="StandardLovRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.lov.definition.EJRwtStandardLovRendererDefinition"/>
-            <renderer name="LookupLovRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.lov.definition.EJRwtLookupFormLovRendererDefinition"/>
+            <renderer name="StandardLovRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.lov.definition.EJRWTStandardLovRendererDefinition"/>
+            <renderer name="LookupLovRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.lov.definition.EJRWTLookupFormLovRendererDefinition"/>
         </lovRenderers>
         <menuRenderers>
         </menuRenderers>
         <appCompRenderers>
-            <renderer name="TabFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.TabFormContainerRendererDefinition"/>
-            <renderer name="MenuTree" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.MenuTreeRendererDefinition"/>
-            <renderer name="FormToolBar" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.FormToolBarRendererDefinition"/>
-            <renderer name="Banner" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.BannerRendererDefinition"/>
-            <renderer name="SingleFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.SingleFormRendererDefinition"/>
-            <renderer name="StackedFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.StackedFormContainerRendererDefinition"/>
-            <renderer name="Statusbar" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.StatusbarRendererDefinition"/>
+            <renderer name="TabFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTTabFormContainerRendererDefinition"/>
+            <renderer name="MenuTree" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTMenuTreeRendererDefinition"/>
+            <renderer name="FormToolBar" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTFormToolBarRendererDefinition"/>
+            <renderer name="Banner" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTBannerRendererDefinition"/>
+            <renderer name="SingleFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTSingleFormRendererDefinition"/>
+            <renderer name="StackedFormContainer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTStackedFormContainerRendererDefinition"/>
+            <renderer name="Statusbar" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.application.EJRWTStatusbarRendererDefinition"/>
         </appCompRenderers>
     </renderer>
 </entirejFramework>
