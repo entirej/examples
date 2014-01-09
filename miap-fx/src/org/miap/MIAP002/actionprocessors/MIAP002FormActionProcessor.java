@@ -65,6 +65,9 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
         validateToolbarCreateState(form.getBlock(F_MIAP002.B_INVOICE_POSITIONS_TOOLBAR.ID), invRecord != null);
 
         form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).executeQuery();
+        
+        
+        
 
     }
 
@@ -145,6 +148,8 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
             validateToolbarState(form.getBlock(F_MIAP002.B_INVOICE_POSITIONS_TOOLBAR.ID), form.getBlock(F_MIAP002.B_INVOICE_POSITIONS_BLOCK.ID)
                     .getFocusedRecord() != null && form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).getFocusedRecord() != null);
         }
+        
+        updateStatus(form);
     }
 
     @Override
@@ -204,7 +209,7 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
         {
             if (record.containsItem(F_MIAP002.B_INVOICE_POSITIONS_BLOCK.I_INV_ID))
             {
-                // Foreign key to INVOICE – This is for invoice position
+                // Foreign key to INVOICE ï¿½ This is for invoice position
                 // relation to invoice table
                 EJRecord invoiceRecord = form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).getFocusedRecord();
                 record.setValue(F_MIAP002.B_INVOICE_POSITIONS_BLOCK.I_INV_ID, invoiceRecord.getValue(F_MIAP002.B_INVOICE_BLOCK.I_ID));
@@ -460,6 +465,7 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
         // update the invoice amounts after a new invoice position has been
         // created
         updateInvoiceAmounts(form, record);
+        updateStatus(form);
     }
 
     @Override
@@ -479,7 +485,12 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
     {
         // refresh the invoice position totals after any change to record
         refreshInvPosTotals(form, record);
-
+        updateStatus(form);
+    }
+    
+    void updateStatus(EJForm form)
+    {
+        form.getApplicationLevelParameter("SB_SECTION_1").setValue("Invouces: "+String.valueOf(form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).getBlockRecords().size()));
     }
 
     /**
