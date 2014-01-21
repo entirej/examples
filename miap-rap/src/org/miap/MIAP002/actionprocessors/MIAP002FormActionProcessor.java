@@ -63,7 +63,13 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
 
         form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).executeQuery();
         form.getBlock(F_MIAP002.B_INV_INV_POS.ID).executeQuery();
+        updateStatus(form);
 
+    }
+    
+    void updateStatus(EJForm form)
+    {
+        form.getApplicationLevelParameter("SB_SECTION_02").setValue("Invouces: "+String.valueOf(form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).getBlockRecords().size()));
     }
 
     @Override
@@ -139,6 +145,8 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
         {
             validateToolbarState(form.getBlock(F_MIAP002.B_INVOICE_POSITIONS_TOOLBAR.ID), form.getBlock(F_MIAP002.B_INVOICE_POSITIONS_BLOCK.ID).getFocusedRecord() != null && form.getBlock(F_MIAP002.B_INVOICE_BLOCK.ID).getFocusedRecord() != null);
         }
+        
+        updateStatus(form);
     }
 
     @Override
@@ -445,6 +453,7 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
         // update the invoice amounts after a new invoice position has been
         // created
         updateInvoiceAmounts(form, record);
+        updateStatus(form);
     }
 
     @Override
@@ -464,6 +473,7 @@ public class MIAP002FormActionProcessor extends MIAPDefaultFormActionProcessor i
     {
         // refresh the invoice position totals after any change to record
         refreshInvPosTotals(form, record);
+        updateStatus(form);
 
     }
 

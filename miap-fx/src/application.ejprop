@@ -7,6 +7,7 @@
     <reusableLovDefinitionLocation><![CDATA[org/miap/forms/reusablelovdefs]]></reusableLovDefinitionLocation>
     <translatorClassName></translatorClassName>
     <applicationLevelParameterList>
+        <appicationLevelParameter name="SB_SECTION_1" dataType="java.lang.String"></appicationLevelParameter>
     </applicationLevelParameterList>
     <applicationDefinedProperties>
     </applicationDefinedProperties>
@@ -32,6 +33,8 @@
             </renderer>
             <renderer name="DateItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXDateItemRenderer">
             </renderer>
+            <renderer name="DateTimeItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXDateTimeItemRenderer">
+            </renderer>
             <renderer name="CheckBoxItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXCheckBoxItemRenderer">
             </renderer>
             <renderer name="ComboItem" rendererClassName="org.entirej.applicationframework.fx.renderers.items.EJFXComboItemRenderer">
@@ -53,6 +56,7 @@
         <appCompRenderers>
             <renderer name="SingleFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXSingleFormContainer"/>
             <renderer name="Banner" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXBanner"/>
+            <renderer name="StatusBar" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXStatusBar"/>
             <renderer name="TabFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXTabPaneFormContainer"/>
             <renderer name="StackedFormContainer" rendererClassName="org.entirej.applicationframework.fx.application.form.containers.EJFXStackedPaneFormContainer"/>
             <renderer name="FormToolBar" rendererClassName="org.entirej.applicationframework.fx.application.components.EJFXDefaultFormToolbar"/>
@@ -155,6 +159,36 @@
                     </item>
                 </items>
             </item>
+            <item type="COMPONENT">
+                <name></name>
+                <fill><![CDATA[BOTH]]></fill>
+                <grab><![CDATA[HORIZONTAL]]></grab>
+                <hHint>25</hHint>
+                <wHint>0</wHint>
+                <hMin>0</hMin>
+                <wMin>0</wMin>
+                <hSpan>1</hSpan>
+                <VSpan>1</VSpan>
+                <renderer><![CDATA[StatusBar]]></renderer>
+                <rendererProperties>
+                    <propertyList name="SECTIONS">
+                        <listEntry>
+                            <property name="VISUAL_ATTRIBUTE"></property>
+                            <property name="EXPAND_X"><![CDATA[true]]></property>
+                            <property name="ALIGNMENT"><![CDATA[LEFT]]></property>
+                            <property name="WIDTH"></property>
+                            <property name="PARAMETER"></property>
+                        </listEntry>
+                        <listEntry>
+                            <property name="VISUAL_ATTRIBUTE"><![CDATA[SB_SEC_01]]></property>
+                            <property name="EXPAND_X"><![CDATA[false]]></property>
+                            <property name="ALIGNMENT"><![CDATA[RIGHT]]></property>
+                            <property name="WIDTH"><![CDATA[120]]></property>
+                            <property name="PARAMETER"><![CDATA[SB_SECTION_1]]></property>
+                        </listEntry>
+                    </propertyList>
+                </rendererProperties>
+            </item>
         </items>
     </applicationLayout>
     <visualAttributes>
@@ -172,6 +206,14 @@
             <style><![CDATA[Plain]]></style>
             <weight><![CDATA[Normal]]></weight>
             <foregroundColor></foregroundColor>
+            <backgroundColor></backgroundColor>
+        </visualAttribute>
+        <visualAttribute name="SB_SEC_01">
+            <fontName><![CDATA[Unspecified]]></fontName>
+            <fontSize>-1</fontSize>
+            <style><![CDATA[Unspecified]]></style>
+            <weight><![CDATA[Bold]]></weight>
+            <foregroundColor><![CDATA[r128g0b0]]></foregroundColor>
             <backgroundColor></backgroundColor>
         </visualAttribute>
     </visualAttributes>
