@@ -6,7 +6,7 @@ package org.miap.forms.reusableblocks.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class F_STANDARD_TOOLBAR_QIUD
+public class RB_STANDARD_TOOLBAR_QIUD
 {
     public static final String ID = "StandardToolbarQIUD";
 

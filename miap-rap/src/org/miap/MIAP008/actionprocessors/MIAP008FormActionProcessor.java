@@ -34,7 +34,7 @@ import org.entirej.framework.core.service.EJQueryCriteria;
 import org.entirej.framework.core.service.EJRestrictions;
 import org.miap.forms.actions.MIAPDefaultFormActionProcessor;
 import org.miap.forms.constants.F_MIAP008;
-import org.miap.forms.reusablelovdefs.constants.F_CONTACT_TYPES;
+import org.miap.forms.reusablelovdefs.constants.RL_CONTACT_TYPES;
 import org.miap.services.ContactTypesService;
 
 /**
@@ -49,7 +49,7 @@ public class MIAP008FormActionProcessor extends MIAPDefaultFormActionProcessor i
         // filter the contact type grid to display only records that
         // does not include ContactTypesService.MAIN as type
         EJQueryCriteria queryCriteria = new EJQueryCriteria();
-        queryCriteria.add(EJRestrictions.notEquals(F_CONTACT_TYPES.L_CONTACT_TYPES.I_TYPE, ContactTypesService.MAIN));
+        queryCriteria.add(EJRestrictions.notEquals(RL_CONTACT_TYPES.L_CONTACT_TYPES.I_TYPE, ContactTypesService.MAIN));
 
         form.getBlock(F_MIAP008.B_CONTACT_TYPES_BLOCK.ID).executeQuery(queryCriteria);
     }

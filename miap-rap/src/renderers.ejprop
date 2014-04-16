@@ -10,6 +10,7 @@
             <renderer name="TreeRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTTreeRecordBlockDefinition"/>
             <renderer name="TreeTableRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTTreeTableRecordBlockDefinition"/>
             <renderer name="MobileListRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.mobile.block.definition.EJRWTListRecordBlockDefinition"/>
+            <renderer name="HTMLMultiRecord" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.block.definition.EJRWTHtmlTableBlockRendererDefinition"/>
         </blockRenderers>
         <itemRenderers>
             <renderer name="TextItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTTextItemRendererDefinition">
@@ -33,6 +34,8 @@
             <renderer name="CheckBoxItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTCheckBoxRendererDefinition">
             </renderer>
             <renderer name="ImageItemRenderer" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTImageItemRendererDefinition">
+            </renderer>
+            <renderer name="ListItem" rendererDefinitionClassName="org.entirej.applicationframework.rwt.renderers.item.definition.EJRWTListBoxRendererDefinition">
             </renderer>
         </itemRenderers>
         <lovRenderers>

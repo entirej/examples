@@ -6,7 +6,7 @@ package org.miap.forms.reusablelovdefs.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class F_CONTACT_TYPES
+public class RL_CONTACT_TYPES
 {
     public static final String ID = "ContactTypes";
 

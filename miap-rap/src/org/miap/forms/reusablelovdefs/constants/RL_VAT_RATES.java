@@ -6,7 +6,7 @@ package org.miap.forms.reusablelovdefs.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class F_VAT_RATES
+public class RL_VAT_RATES
 {
     public static final String ID = "VatRates";
 

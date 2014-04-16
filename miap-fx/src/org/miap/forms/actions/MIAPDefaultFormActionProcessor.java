@@ -26,7 +26,7 @@ import org.entirej.framework.core.EJScreenItem;
 import org.entirej.framework.core.actionprocessor.EJDefaultFormActionProcessor;
 import org.entirej.framework.core.enumerations.EJScreenType;
 import org.entirej.framework.core.service.EJQueryCriteria;
-import org.miap.forms.reusableblocks.constants.F_STANDARD_TOOLBAR_QIUD;
+import org.miap.forms.reusableblocks.constants.RB_STANDARD_TOOLBAR_QIUD;
 import org.miap.services.PKSequenceService;
 
 /**
@@ -80,14 +80,14 @@ public class MIAPDefaultFormActionProcessor extends EJDefaultFormActionProcessor
     {
         if (toolbarBlock != null)
         {
-            if (toolbarBlock.containsItem(F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_EDIT))
+            if (toolbarBlock.containsItem(RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_EDIT))
             {
-                EJScreenItem editItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_EDIT);
+                EJScreenItem editItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_EDIT);
                 editItem.setEditable(enable);
             }
-            if (toolbarBlock.containsItem(F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_DELETE))
+            if (toolbarBlock.containsItem(RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_DELETE))
             {
-                EJScreenItem deleteItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_DELETE);
+                EJScreenItem deleteItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_DELETE);
                 deleteItem.setEditable(enable);
             }
         }
@@ -105,9 +105,9 @@ public class MIAPDefaultFormActionProcessor extends EJDefaultFormActionProcessor
      */
     public void validateToolbarCreateState(final EJBlock toolbarBlock, boolean enable)
     {
-        if (toolbarBlock.containsItem(F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_NEW))
+        if (toolbarBlock.containsItem(RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_NEW))
         {
-            EJScreenItem newItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, F_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_NEW);
+            EJScreenItem newItem = toolbarBlock.getScreenItem(EJScreenType.MAIN, RB_STANDARD_TOOLBAR_QIUD.B_STANDARD_TOOLBAR_QIUD.I_NEW);
             newItem.setEditable(enable);
         }
     }

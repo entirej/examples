@@ -6,7 +6,7 @@ package org.miap.forms.reusablelovdefs.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class F_SALUTATIONS
+public class RL_SALUTATIONS
 {
     public static final String ID = "Salutations";
 
