@@ -206,6 +206,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <rendererProperties>
                                 <property name="TITLE_BAR_EXPANDABLE" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                                 <property name="TITLE_BAR_EXPANDED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
@@ -222,11 +224,16 @@
                                     <validateFromLov>true</validateFromLov>
                                     <actionCommand></actionCommand>
                                     <blockRendererRequiredProperties>
+                                        <property name="VISUAL_ATTRIBUTE" multilingual="false" propertyType="VISUAL_ATTRIBUTE"></property>
                                         <property name="EXPAND_X" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="DISPLAYED_WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="INITIALLY_DISPLAYED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="EXPAND_Y" multilingual="false" propertyType="BOOLEAN"></property>
+                                        <property name="ITEM_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="DISPLAYED_HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="LABEL_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="XSPAN" multilingual="false" propertyType="INTEGER"><![CDATA[1]]></property>
+                                        <property name="LABEL_ORIENTATION" multilingual="false" propertyType="STRING"><![CDATA[RIGHT]]></property>
                                         <property name="YSPAN" multilingual="false" propertyType="INTEGER"></property>
                                     </blockRendererRequiredProperties>
                                 </item>
@@ -461,6 +468,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,###.##]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -489,6 +497,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -514,6 +523,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,##0.00]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -527,6 +537,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,###.##]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -589,6 +600,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -604,6 +616,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -619,6 +632,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -650,6 +664,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="invDate" isSpacerItem="false">
                                     <label><![CDATA[Date]]></label>
@@ -793,6 +809,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="nr" isSpacerItem="false">
                                     <label><![CDATA[Nr]]></label>
@@ -1066,6 +1084,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="nr" isSpacerItem="false">
                                     <label><![CDATA[Nr]]></label>
@@ -1627,6 +1647,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <rendererProperties>
                                 <property name="TITLE_BAR_EXPANDABLE" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                                 <property name="TITLE_BAR_EXPANDED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
@@ -1643,11 +1665,16 @@
                                     <validateFromLov>true</validateFromLov>
                                     <actionCommand></actionCommand>
                                     <blockRendererRequiredProperties>
+                                        <property name="VISUAL_ATTRIBUTE" multilingual="false" propertyType="VISUAL_ATTRIBUTE"></property>
                                         <property name="EXPAND_X" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="DISPLAYED_WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="INITIALLY_DISPLAYED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="EXPAND_Y" multilingual="false" propertyType="BOOLEAN"></property>
+                                        <property name="ITEM_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="DISPLAYED_HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="LABEL_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="XSPAN" multilingual="false" propertyType="INTEGER"><![CDATA[1]]></property>
+                                        <property name="LABEL_ORIENTATION" multilingual="false" propertyType="STRING"><![CDATA[RIGHT]]></property>
                                         <property name="YSPAN" multilingual="false" propertyType="INTEGER"></property>
                                     </blockRendererRequiredProperties>
                                 </item>
@@ -1860,6 +1887,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,###]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -1873,6 +1901,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -1898,6 +1927,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,###.##]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -1911,6 +1941,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -1951,6 +1982,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,##0.00]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -1964,6 +1996,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,##0.00]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -1977,6 +2010,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="PROTECTED" multilingual="false" propertyType="BOOLEAN"></property>
                             <property name="MAXLENGTH" multilingual="false" propertyType="INTEGER"></property>
@@ -1992,6 +2026,7 @@
                         <defaultInsertValue></defaultInsertValue>
                         <defaultQueryValue></defaultQueryValue>
                         <itemRendererProperties>
+                            <property name="SELECT_ON_FOCUS" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                             <property name="ALIGNMENT" multilingual="false" propertyType="STRING"></property>
                             <property name="FORMAT" multilingual="false" propertyType="STRING"><![CDATA[###,###,###,##0.00]]></property>
                             <property name="DISPLAY_VALUE_AS_LABEL" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
@@ -2021,6 +2056,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="position" isSpacerItem="false">
                                     <label><![CDATA[Pos]]></label>
@@ -2184,6 +2221,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="custProjName" isSpacerItem="false">
                                     <label><![CDATA[Project]]></label>
@@ -2457,6 +2496,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <itemGroupItemList>
                                 <item referencedItemName="custProjName" isSpacerItem="false">
                                     <label><![CDATA[Project]]></label>
@@ -2846,6 +2887,8 @@
                             <yspan>1</yspan>
                             <expandHorizontally>true</expandHorizontally>
                             <expandVertically>true</expandVertically>
+                            <verticalAlignment><![CDATA[FILL]]></verticalAlignment>
+                            <horizontalAlignment><![CDATA[FILL]]></horizontalAlignment>
                             <rendererProperties>
                                 <property name="TITLE_BAR_EXPANDABLE" multilingual="false" propertyType="BOOLEAN"><![CDATA[false]]></property>
                                 <property name="TITLE_BAR_EXPANDED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
@@ -2862,16 +2905,21 @@
                                     <validateFromLov>true</validateFromLov>
                                     <actionCommand></actionCommand>
                                     <blockRendererRequiredProperties>
+                                        <property name="VISUAL_ATTRIBUTE" multilingual="false" propertyType="VISUAL_ATTRIBUTE"></property>
                                         <property name="EXPAND_X" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="DISPLAYED_WIDTH" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="INITIALLY_DISPLAYED" multilingual="false" propertyType="BOOLEAN"><![CDATA[true]]></property>
                                         <property name="EXPAND_Y" multilingual="false" propertyType="BOOLEAN"></property>
+                                        <property name="ITEM_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="DISPLAYED_HEIGHT" multilingual="false" propertyType="INTEGER"></property>
+                                        <property name="LABEL_POSITION" multilingual="false" propertyType="STRING"><![CDATA[LEFT]]></property>
                                         <property name="XSPAN" multilingual="false" propertyType="INTEGER"><![CDATA[1]]></property>
+                                        <property name="LABEL_ORIENTATION" multilingual="false" propertyType="STRING"><![CDATA[RIGHT]]></property>
                                         <property name="YSPAN" multilingual="false" propertyType="INTEGER"></property>
                                     </blockRendererRequiredProperties>
                                 </item>
                                 <item referencedItemName="TotalAmtIncVAT" isSpacerItem="false">
-                                    <label><![CDATA[hu]]></label>
+                                    <label></label>
                                     <hint></hint>
                                     <editAllowed>false</editAllowed>
                                     <visible>true</visible>
@@ -2914,6 +2962,8 @@
                 </updateScreen>
             </block>
         </blockList>
+        <objGroupDefinitionList>
+        </objGroupDefinitionList>
         <relationList>
             <relation name="Invoice_to_InvoicePositions" masterBlockName="InvoiceBlock" detailBlockName="InvoicePositionsBlock" preventMasterlessOperations="true" deferredQuery="false" autoQuery="true">
                 <join masterItem="id" detailItem="invId">
