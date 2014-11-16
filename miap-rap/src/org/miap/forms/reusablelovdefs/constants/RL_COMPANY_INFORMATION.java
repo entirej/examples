@@ -6,28 +6,26 @@ package org.miap.forms.reusablelovdefs.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class RL_COMPANY_INFORMATION
-{
-    public static final String ID = "CompanyInformation";
+public class RL_COMPANY_INFORMATION {
+	public static final String ID = "CompanyInformation";
 
-    public static class L_COMPANY_INFORMATION
-    {
-        public static final String ID                    = "CompanyInformation";
-        public static final String I_NAME                = "name";
-        public static final String I_BANK_TOWN           = "bankTown";
-        public static final String I_IBAN                = "iban";
-        public static final String I_TOWN                = "town";
-        public static final String I_ADDRESS_LINE_1      = "addressLine1";
-        public static final String I_BANK_ADDRESS_LINE_3 = "bankAddressLine3";
-        public static final String I_BANK_POST_CODE      = "bankPostCode";
-        public static final String I_ADDRESS_LINE_3      = "addressLine3";
-        public static final String I_BANK_ADDRESS_LINE_1 = "bankAddressLine1";
-        public static final String I_ADDRESS_LINE_2      = "addressLine2";
-        public static final String I_ID                  = "id";
-        public static final String I_BANK_ADDRESS_LINE_2 = "bankAddressLine2";
-        public static final String I_BANK_NAME           = "bankName";
-        public static final String I_POST_CODE           = "postCode";
+	public static class L_COMPANY_INFORMATION {
+		public static final String ID = "CompanyInformation";
+		public static final String I_NAME = "name";
+		public static final String I_BANK_TOWN = "bankTown";
+		public static final String I_IBAN = "iban";
+		public static final String I_TOWN = "town";
+		public static final String I_ADDRESS_LINE_1 = "addressLine1";
+		public static final String I_BANK_ADDRESS_LINE_3 = "bankAddressLine3";
+		public static final String I_BANK_POST_CODE = "bankPostCode";
+		public static final String I_ADDRESS_LINE_3 = "addressLine3";
+		public static final String I_BANK_ADDRESS_LINE_1 = "bankAddressLine1";
+		public static final String I_ADDRESS_LINE_2 = "addressLine2";
+		public static final String I_ID = "id";
+		public static final String I_BANK_ADDRESS_LINE_2 = "bankAddressLine2";
+		public static final String I_BANK_NAME = "bankName";
+		public static final String I_POST_CODE = "postCode";
 
-    }
+	}
 
 }
