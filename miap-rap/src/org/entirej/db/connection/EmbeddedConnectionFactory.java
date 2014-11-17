@@ -43,6 +43,8 @@ public class EmbeddedConnectionFactory implements EJConnectionFactory
     private static final boolean USE_PER_SESSION_DB = Boolean.TRUE;
 
     String                       dbPath;
+    
+    private  Connection connection;
 
     public EmbeddedConnectionFactory() throws UnsupportedEncodingException
     {
@@ -52,6 +54,8 @@ public class EmbeddedConnectionFactory implements EJConnectionFactory
         String decoded = URLDecoder.decode(r.getFile(), "UTF-8");
 
         dbPath = decoded + "db/miap";
+        
+       
     }
 
     private String getDBPath()
@@ -140,31 +144,43 @@ public class EmbeddedConnectionFactory implements EJConnectionFactory
 
     Connection getConnection(EJFrameworkManager fwkManager)
     {
-        try
-        {
-            // create embedded db in class path
-            Class.forName("org.h2.Driver");
+        
+        synchronized(this){
+            
+            if(connection==null)
+            {
+                long strat = System.currentTimeMillis();
+                try
+                {
+                    // create embedded db in class path
+                    Class.forName("org.h2.Driver");
 
-            // create a java.util.Properties file and add the db authentication
-            // & schema values.
-            Properties prop = new Properties();
-            prop.put("user", "SA");
-            prop.put("password", "");
-            prop.put("schema", "miap");
+                    // create a java.util.Properties file and add the db authentication
+                    // & schema values.
+                    Properties prop = new Properties();
+                    prop.put("user", "SA");
+                    prop.put("password", "");
+                    prop.put("schema", "miap");
 
-            final Connection connection = DriverManager.getConnection(String.format("jdbc:h2:%s", getDBPath()), prop);
+                      connection = DriverManager.getConnection(String.format("jdbc:h2:%s", getDBPath()), prop);
 
+                    
+                    System.err.println("TIME:"+(System.currentTimeMillis()-strat));
+                 
+                }
+                catch (SQLException e)
+                {
+                    e.printStackTrace();
+                }
+                catch (ClassNotFoundException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+            
+        }
             return connection;
-        }
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
-        catch (ClassNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        return null;
+        
 
     }
 
