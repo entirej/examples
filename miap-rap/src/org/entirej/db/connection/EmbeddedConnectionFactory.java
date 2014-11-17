@@ -133,7 +133,12 @@ public class EmbeddedConnectionFactory implements EJConnectionFactory
     }
 
     @Override
-    public EJFrameworkConnection createConnection(EJFrameworkManager arg0)
+    public EJFrameworkConnection createConnection(EJFrameworkManager fwkManager)
+    {
+        return new FrameworkConnection(fwkManager, this);
+    }
+
+    Connection getConnection(EJFrameworkManager fwkManager)
     {
         try
         {
@@ -149,56 +154,7 @@ public class EmbeddedConnectionFactory implements EJConnectionFactory
 
             final Connection connection = DriverManager.getConnection(String.format("jdbc:h2:%s", getDBPath()), prop);
 
-            return new EJFrameworkConnection()
-            {
-
-                @Override
-                public void rollback()
-                {
-                    try
-                    {
-                        connection.rollback();
-                    }
-                    catch (SQLException e)
-                    {
-                        e.printStackTrace();
-                    }
-
-                }
-
-                @Override
-                public Object getConnectionObject()
-                {
-                    return connection;
-                }
-
-                @Override
-                public void commit()
-                {
-                    try
-                    {
-                        connection.commit();
-                    }
-                    catch (SQLException e)
-                    {
-
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void close()
-                {
-                    try
-                    {
-                        connection.close();
-                    }
-                    catch (SQLException e)
-                    {
-                        e.printStackTrace();
-                    }
-                }
-            };
+            return connection;
         }
         catch (SQLException e)
         {

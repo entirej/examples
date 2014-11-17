@@ -9,8 +9,8 @@
     <objectGroupDefinitionLocation></objectGroupDefinitionLocation>
     <translatorClassName></translatorClassName>
     <applicationLevelParameterList>
-        <appicationLevelParameter name="SB_SECTION_01" dataType="java.lang.String"></appicationLevelParameter>
-        <appicationLevelParameter name="SB_SECTION_02" dataType="java.lang.String"></appicationLevelParameter>
+        <appicationLevelParameter name="SB_SECTION_01" dataType="java.lang.String" defaultValue=""></appicationLevelParameter>
+        <appicationLevelParameter name="SB_SECTION_02" dataType="java.lang.String" defaultValue=""></appicationLevelParameter>
     </applicationLevelParameterList>
     <applicationDefinedProperties>
         <property name="DISPLAY_TAB_BORDER" multilingual="false" propertyType="BOOLEAN"></property>
@@ -149,7 +149,7 @@
                 </leaf>
             </leaf>
         </applicationMenu>
-        <applicationMenu name="EJ.MOBILE" actionProcessorClassName="">
+        <applicationMenu name="EJ_MOBILE" actionProcessorClassName="">
             <leaf type="FORM" name="INVOICES.M">
                 <displayName><![CDATA[Invoices]]></displayName>
                 <formName><![CDATA[MIAP002M]]></formName>

@@ -42,7 +42,7 @@ public class ApplicationLauncher extends EJRWTApplicationLauncher
     @Override
     protected String getLoadingMessage()
     {
-        return "Loading Mojave Invoicing Test Application (MIAP)";
+        return "Loading EntireJ Example Application (MIAP)";
     }
 
 }

@@ -6,46 +6,43 @@ package org.miap.forms.constants;
  * entirej plugin from the form.  It
  * should not be modified by hand.
  */
-public class F_MIAP004
-{
-    public static final String ID = "MIAP004";
+public class F_MIAP004 {
+	public static final String ID = "MIAP004";
 
-    public static class B_COMPANY_INFORMATION_TOOLBAR
-    {
-        public static final String ID       = "CompanyInformationToolbar";
-        public static final String I_CLOSE  = "close";
-        public static final String I_NEW    = "new";
-        public static final String I_EDIT   = "edit";
-        public static final String I_DELETE = "delete";
+	public static class B_COMPANY_INFORMATION_TOOLBAR {
+		public static final String ID = "CompanyInformationToolbar";
+		public static final String I_CLOSE = "close";
+		public static final String I_NEW = "new";
+		public static final String I_EDIT = "edit";
+		public static final String I_DELETE = "delete";
 
-    }
+	}
 
-    public static class B_COMPANY_INFORMATION_BLOCK
-    {
-        public static final String ID                    = "CompanyInformationBlock";
-        public static final String I_NAME                = "name";
-        public static final String I_BANK_TOWN           = "bankTown";
-        public static final String I_IBAN                = "iban";
-        public static final String I_TOWN                = "town";
-        public static final String I_ADDRESS_LINE_1      = "addressLine1";
-        public static final String I_BANK_ADDRESS_LINE_3 = "bankAddressLine3";
-        public static final String I_BANK_POST_CODE      = "bankPostCode";
-        public static final String I_ADDRESS_LINE_3      = "addressLine3";
-        public static final String I_BANK_ADDRESS_LINE_1 = "bankAddressLine1";
-        public static final String I_ADDRESS_LINE_2      = "addressLine2";
-        public static final String I_ID                  = "id";
-        public static final String I_BANK_ADDRESS_LINE_2 = "bankAddressLine2";
-        public static final String I_BANK_NAME           = "bankName";
-        public static final String I_POST_CODE           = "postCode";
+	public static class B_COMPANY_INFORMATION_BLOCK {
+		public static final String ID = "CompanyInformationBlock";
+		public static final String I_NAME = "name";
+		public static final String I_BANK_TOWN = "bankTown";
+		public static final String I_IBAN = "iban";
+		public static final String I_TOWN = "town";
+		public static final String I_ADDRESS_LINE_1 = "addressLine1";
+		public static final String I_BANK_ADDRESS_LINE_3 = "bankAddressLine3";
+		public static final String I_BANK_POST_CODE = "bankPostCode";
+		public static final String I_ADDRESS_LINE_3 = "addressLine3";
+		public static final String I_BANK_ADDRESS_LINE_1 = "bankAddressLine1";
+		public static final String I_ADDRESS_LINE_2 = "addressLine2";
+		public static final String I_ID = "id";
+		public static final String I_BANK_ADDRESS_LINE_2 = "bankAddressLine2";
+		public static final String I_BANK_NAME = "bankName";
+		public static final String I_POST_CODE = "postCode";
 
-    }
+	}
 
-    public static final String C_COMPANY_INFORMATION_BLOCK   = "CompanyInformationBlock";
-    public static final String C_COMPANY_INFORMATION_TOOLBAR = "CompanyInformationToolbar";
+	public static final String C_COMPANY_INFORMATION_BLOCK = "CompanyInformationBlock";
+	public static final String C_COMPANY_INFORMATION_TOOLBAR = "CompanyInformationToolbar";
 
-    public static final String AC_TOOLBAR_CLOSE              = "TOOLBAR_CLOSE";
-    public static final String AC_TOOLBAR_DELETE             = "TOOLBAR_DELETE";
-    public static final String AC_TOOLBAR_EDIT               = "TOOLBAR_EDIT";
-    public static final String AC_TOOLBAR_NEW                = "TOOLBAR_NEW";
+	public static final String AC_TOOLBAR_CLOSE = "TOOLBAR_CLOSE";
+	public static final String AC_TOOLBAR_DELETE = "TOOLBAR_DELETE";
+	public static final String AC_TOOLBAR_EDIT = "TOOLBAR_EDIT";
+	public static final String AC_TOOLBAR_NEW = "TOOLBAR_NEW";
 
 }
